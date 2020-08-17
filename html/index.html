@@ -3,44 +3,7 @@
 <head>
     <title>WEB1 - Welcome</title>
     <meta charset="utf-8">
-    <script>
-        var Links = {
-            setColor:function LinksSetColor(color){
-                var alist = document.querySelectorAll('a');
-                var i = 0;
-                while(i<alist.length){
-                        alist[i].style.color = color;
-                        i++;
-                }
-                
-            }
-        }
-
-        var Body = {
-            setColor:function BodySetColor(color){
-                document.querySelector('body').style.color = color;
-            },
-            setBackgroundColor: function BodySetBackgroundColor(color){
-                document.querySelector('body').style.backgroundColor = color;
-            }
-        }
-
-        function nightDayHandler(self){
-            var target = document.querySelector('body');
-            if(self.value === 'night'){
-                Body.setBackgroundColor('black');
-                Body.setColor('white')
-                self.value = 'day'; 
-                Links.setColor('powderblue');
-            }
-            else{
-                Body.setBackgroundColor('white');
-                Body.setColor('black')
-                self.value = 'night';
-                Links.setColor('black');
-            }
-        }
-    </script>
+    <script src = "colors.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
